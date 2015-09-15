@@ -40,6 +40,7 @@ Public repositories are free. Private ones are not.\par
 - At the bottom of the page, type a short, meaningful \b commit message\b0  that describes the change you made to the file.\par
 - Below the commit message fields, decide whether to add your commit to the current branch or to a new branch. If your current branch is \b master\b0 , you should choose to \b create a new branch\b0  for your commit and then create a \b pull request.\b0  \par
 - Click \b Propose file change\b0 . \par
+\par
 \f1\lang9{\pict{\*\picprop{\sp{\sn wzDescription}{\sv Description: fork and upstream}}{\sp{\sn posv}{\sv 1}}
 }\pngblip\picw11799\pich12248\picwgoal6689\pichgoal6944 
 89504e470d0a1a0a0000000d49484452000001be000001cf0802000000a39128da000000017352
@@ -1675,14 +1676,17 @@ bd1d51144d26d3e9d3a70f1f3e6c341af14bbe509b9186bbe9c1d338f0550a9e66870e1d860e1d
 }\f0\lang1033\par
 \b\par
 Forking a repository\par
-\b0 - A fork is a remote, server-side copy of a repository, distinct from the original\par
+\b0 - Allows you to make a copy of somebody else's repository directly on the GitHug servers without pulling down the code to your local machine first\par
+- Forking links the new repository back to the original\par
+- Makes it easier to suggst changes back to the original repository\par
+- A fork is a remote, server-side copy of a repository, distinct from the original\par
 - A clone is not a fork; a clone is a local copy of a remote repository.\par
 - In the top-right corner of the original repository page (e.g. \b octocat/Spoon-Knife\b0 ), click \b Fork\b0\par
 - Forking a repository allows you to freely experiment with changes without affecting original project.\par
 - Forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.\par
 - e.g. using forks to propose changes for bug fixes:\par
   - Fork the repository.\par
-  - Make the fix.\par
+  - Make the fix locally. (create new branch, checkout new branch, make change, add, commit, and push)\par
   - Submit a pull request to the project owner\par
 \par
 \b Keeping Your Fork Synced\par
@@ -1690,7 +1694,7 @@ Forking a repository\par
 - \b upstream\b0  generally refers to the original repo that you have forked\par
 - \b origin\b0  is your fork: your own repo on GitHub, a copy of the original repo of GitHub\par
 - When a repo is cloned to your local machine, it has a default remote called \b origin\b0  that points to your fork on GitHub, not the original repo it was forked from.\par
-- To keep track of original repo, you need to add another remote named upstream (e.g. git remote add upstream original_URL)\par
+- To keep track of original repo, you need to add another remote named upstream (e.g. \b git remote add upstream original_URL\b0 )\par
 - You will use \b upstream\b0  to fetch from the original repo (in order to keep your local copy in sync with the project you want to contribute to).\par
 - You will use \b origin\b0  to\b  pull \b0 and\b  push\b0  since you can contribute to your own repo.\par
 - You will contribute back to the \b upstream\b0  repo by making a \b pull request\b0 .\par
@@ -1728,6 +1732,9 @@ upstream {{\field{\*\fldinst{HYPERLINK https://github.com/octocat/Spoon-Knife.gi
 \b0 - At some point you may want to stay up-to-date with a specific project\par
 - When you're on a project page, you can click the \ldblquote\b Watch\b0\rdblquote  button at the top of the page\par
 \par
+\b Collaborators\b0\par
+- When you want to give someone else access to your repository\par
+- Go into repository, select \b Settings\b0 , select \b Collaborators\b0 , \b Search \b0 by username, full name or email address, then \b Add collaborator\b0\par
 \par
 \ul\b The GitHub Flow:\par
 \ulnone\b0 Create a Repository\par
